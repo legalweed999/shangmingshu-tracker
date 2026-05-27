@@ -403,6 +403,9 @@ const MEALS = [
   { date: "2026-05-26", meal: "午餐", items: "茴香鸡蛋粉丝虾皮素包子×3、茴香猪肉包子×1、黄瓜", photo: "", cal: 555, protein: 21.5, carbs: 88.6, fat: 12.2, fiber: 3.4 },
   { date: "2026-05-26", meal: "加餐", items: "茴香猪肉包子×1", photo: "", cal: 180, protein: 8.0, carbs: 25.0, fat: 6.0, fiber: 1.0 },
   { date: "2026-05-26", meal: "晚餐", items: "茴香鸡蛋粉丝虾皮素包子×2、茴香猪肉包子×1、黄瓜", photo: "", cal: 440, protein: 17.5, carbs: 69.8, fat: 10.2, fiber: 2.9 },
+  { date: "2026-05-27", meal: "早餐", items: "茴香猪肉包×2、苹果×1、水煮蛋×1", photo: "", cal: 510, protein: 21.4, carbs: 62.0, fat: 21.2, fiber: 6.0 },
+  { date: "2026-05-27", meal: "午餐", items: "黄瓜、煮玉米×1、素包子×3、自制午餐肉", photo: "", cal: 917, protein: 39.2, carbs: 110.4, fat: 36.6, fiber: 7.3 },
+  { date: "2026-05-27", meal: "晚餐", items: "素包子×1、茴香猪肉包子×1、樱桃", photo: "", cal: 341, protein: 12.8, carbs: 56.2, fat: 8.2, fiber: 3.1 },
 ];
 
 
@@ -410,7 +413,8 @@ const MEALS = [
 // 格式：{ date: "YYYY-MM-DD", weight: 体重数字或null, exercise: "运动", note: "备注", body: { bf: 体脂率, muscle: 肌肉量, visceral: 内脏脂肪, bmi: BMI } }
 // body 可为 null（无体成分数据时）
 const DATA = [
-  { date: "2026-05-26", weight: 89.25, exercise: "", note: "初始记录", body: null },
+  { date: "2026-05-26", weight: 89.25, exercise: "", note: "初始记录", body: null }
+  { date: "2026-05-27", weight: 89.0, exercise: "", note: "较初始⬇0.25kg", body: null },
 ];
 
 const GOAL = 65.0; // 用户目标体重（修改此值）
