@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<!-- deploy-ts: 2026-05-28 21:10:25 -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -385,7 +386,7 @@
   <div class="brand-line">虾教练·为商茗舒定制</div>
   <div class="thank-line">感谢Xiaohan一直以来的支持与鼓励</div>
   <div class="motto-line">让我们遇见更好的自己，帮人们过上更好的生活</div>
-  <img src="nglogo.png" alt="NG Logo" class="footer-logo">
+  <!-- <img src="nglogo.png" alt="NG Logo" class="footer-logo"> -->
 </div>
 
 <script>
@@ -399,17 +400,17 @@ function f(n) { return Number(n).toFixed(1); }
 // ===== 饮食记录 =====
 // 格式：{ date: "YYYY-MM-DD", meal: "餐次", items: "食物描述", photo: "图片路径或空", cal: 热量, protein: 蛋白质, carbs: 碳水, fat: 脂肪, fiber: 纤维 }
 const MEALS = [
-  { date: "2026-05-26", meal: "早餐", items: "茴香鸡蛋粉丝虾皮素包子×2、沛源蛋白粉、乐纤代餐粉、纽崔莱纤维粉", photo: "", cal: 378, protein: 26.2, carbs: 50.3, fat: 6.1, fiber: 6.6 },
-  { date: "2026-05-26", meal: "午餐", items: "茴香鸡蛋粉丝虾皮素包子×3、茴香猪肉包子×1、黄瓜", photo: "", cal: 555, protein: 21.5, carbs: 88.6, fat: 12.2, fiber: 3.4 },
-  { date: "2026-05-26", meal: "加餐", items: "茴香猪肉包子×1", photo: "", cal: 180, protein: 8.0, carbs: 25.0, fat: 6.0, fiber: 1.0 },
-  { date: "2026-05-26", meal: "晚餐", items: "茴香鸡蛋粉丝虾皮素包子×2、茴香猪肉包子×1、黄瓜", photo: "", cal: 440, protein: 17.5, carbs: 69.8, fat: 10.2, fiber: 2.9 },
-  { date: "2026-05-27", meal: "早餐", items: "茴香猪肉包子×2、苹果、水煮蛋、自制午餐肉", photo: "", cal: 510, protein: 22.4, carbs: 54.0, fat: 23.3, fiber: 4.6 },
-  { date: "2026-05-27", meal: "午餐", items: "黄瓜、煮玉米、自制茴香鸡蛋素包子、自制午餐肉", photo: "", cal: 917, protein: 41.3, carbs: 100.5, fat: 40.3, fiber: 6.3 },
-  { date: "2026-05-27", meal: "晚餐", items: "茴香素包子 × 1、茴香肉包子 × 1、樱桃", photo: "", cal: 305, protein: 6.0, carbs: 49.0, fat: 9.0, fiber: 3.0 },
-  { date: "2026-05-28", meal: "早餐", items: "猪肉豆角包子 ×1", photo: "", cal: 115, protein: 4.0, carbs: 15.0, fat: 4.3, fiber: 0.5 },
-  { date: "2026-05-28", meal: "午餐", items: "炸花枝丸、台式甜不辣、九层塔蒜片 (少许)", photo: "", cal: 390, protein: 18.0, carbs: 34.0, fat: 24.0, fiber: 1.5 },
-  { date: "2026-05-28", meal: "晚餐", items: "猪肉豆角包子 ×2、青芒、沛源蛋白粉、乐纤代餐粉", photo: "", cal: 544, protein: 34.7, carbs: 71.1, fat: 12.4, fiber: 9.0 },
-  { date: "2026-05-28", meal: "加餐", items: "烤淀粉肠、卤鸭心", photo: "", cal: 330, protein: 13.0, carbs: 25.0, fat: 20.0, fiber: 0.0 },
+  { date: "2026-05-26", meal: "早餐", items: "茴香鸡蛋粉丝虾皮素包子×2 100g, 沛源蛋白粉 17g, 乐纤代餐粉 10g, 纽崔莱纤维粉 1袋", cal: 378.0, protein: 26.2, carbs: 50.3, fat: 6.1, fiber: 6.6 },
+  { date: "2026-05-26", meal: "午餐", items: "茴香鸡蛋粉丝虾皮素包子×3 150g, 茴香猪肉包子×1 100g, 黄瓜183g", cal: 555.0, protein: 21.5, carbs: 88.6, fat: 12.2, fiber: 3.4 },
+  { date: "2026-05-26", meal: "加餐", items: "茴香猪肉包子×1 100g", cal: 180.0, protein: 8.0, carbs: 25.0, fat: 6.0, fiber: 1.0 },
+  { date: "2026-05-26", meal: "晚餐", items: "茴香鸡蛋粉丝虾皮素包子×2 100g, 茴香猪肉包子×1 100g, 黄瓜187g", cal: 440.0, protein: 17.5, carbs: 69.8, fat: 10.2, fiber: 2.9 },
+  { date: "2026-05-27", meal: "早餐", items: "茴香猪肉包子×2 109g, 苹果 153g, 水煮蛋 50g, 自制午餐肉 40g", cal: 510.0, protein: 22.4, carbs: 54.0, fat: 23.3, fiber: 4.6 },
+  { date: "2026-05-27", meal: "午餐", items: "黄瓜 280g, 煮玉米 200g（估算食部）, 自制茴香鸡蛋素包子 150g, 自制午餐肉 150g", cal: 917.0, protein: 41.3, carbs: 100.5, fat: 40.3, fiber: 6.3 },
+  { date: "2026-05-27", meal: "晚餐", items: "茴香素包子 × 1, 茴香肉包子 × 1, 樱桃 120g", cal: 305.0, protein: 6.0, carbs: 49.0, fat: 9.0, fiber: 3.0 },
+  { date: "2026-05-28", meal: "早餐", items: "猪肉豆角包子 ×1 50g", cal: 115.0, protein: 4.0, carbs: 15.0, fat: 4.3, fiber: 0.5 },
+  { date: "2026-05-28", meal: "午餐", items: "炸花枝丸 100g (5 个), 台式甜不辣 80g, 九层塔蒜片 (少许)", cal: 390.0, protein: 18.0, carbs: 34.0, fat: 24.0, fiber: 1.5 },
+  { date: "2026-05-28", meal: "晚餐", items: "猪肉豆角包子 ×2 100g, 青芒 175g, 沛源蛋白粉 15g, 乐纤代餐粉 29g", cal: 544.0, protein: 34.7, carbs: 71.1, fat: 12.4, fiber: 9.0 },
+  { date: "2026-05-28", meal: "加餐", items: "烤淀粉肠 90g, 卤鸭心 50g", cal: 330.0, protein: 13.0, carbs: 25.0, fat: 20.0, fiber: 0.0 },
 ];
 
 
@@ -417,8 +418,9 @@ const MEALS = [
 // 格式：{ date: "YYYY-MM-DD", weight: 体重数字或null, exercise: "运动", note: "备注", body: { bf: 体脂率, muscle: 肌肉量, visceral: 内脏脂肪, bmi: BMI } }
 // body 可为 null（无体成分数据时）
 const DATA = [
-  { date: "2026-05-26", weight: 89.25, exercise: "", note: "初始记录", body: null }
-  { date: "2026-05-28", weight: 88.4, exercise: "", note: "晨重, 较昨日 89.0kg ⬇ 0.6kg", body: null },
+  { date: "2026-05-26", weight: 89.25, exercise: "", note: "初始晨重", body: null },
+  { date: "2026-05-27", weight: 89.0, exercise: "", note: "较初始89.25kg ⬇ 0.25kg", body: null },
+  { date: "2026-05-28", weight: 88.4, exercise: "", note: "较昨日 89.0kg ⬇ 0.6kg", body: null },
 ];
 
 const GOAL = 65.0; // 用户目标体重（修改此值）
@@ -764,5 +766,3 @@ document.addEventListener('click', e => {
 </script>
 </body>
 </html>
-
-<!-- deploy-ts: 2026-05-28 20:59:05 -->
