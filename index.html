@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<!-- deploy-ts: 2026-05-29 19:25:38 -->
+<!-- deploy-ts: 2026-05-29 19:29:13 -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>shangmingshu 减脂看板 🦞</title>
+<title>商茗舒 减脂看板 🦞</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -264,7 +264,7 @@
 </head>
 <body>
 
-<h1>⭐ shangmingshu 的体重记录</h1>
+<h1>⭐ 商茗舒 的体重记录</h1>
 
 <div class="stats">
   <div class="stat-card glass">
@@ -383,14 +383,14 @@
 <div class="weekly" id="weeklyCards"></div>
 
 <div class="footer">
-  <div class="brand-line">虾教练·为shangmingshu定制</div>
+  <div class="brand-line">虾教练·为商茗舒定制</div>
   <div class="thank-line">感谢Xiaohan一直以来的支持与鼓励</div>
   <div class="motto-line">让我们遇见更好的自己，帮人们过上更好的生活</div>
   <!-- <img src="nglogo.png" alt="NG Logo" class="footer-logo"> -->
 </div>
 
 <script>
-// ===== shangmingshu 的数据 =====
+// ===== 商茗舒 的数据 =====
 // ===== ⚠️ 由 deploy.py 自动生成，请勿手动修改 =====
 
 // 每日营养目标（按用户情况修改）
@@ -440,7 +440,7 @@ function diffDays(a, b) { return Math.round((new Date(b)-new Date(a))/86400000);
 const withWeight = DATA.filter(d => d.weight !== null);
 
 if (withWeight.length < 1) {
-  document.getElementById('weeklyCards').innerHTML = '<div class="no-data glass"><div class="emoji">📝</div>还没有数据<br>shangmingshu 快来报体重吧</div>';
+  document.getElementById('weeklyCards').innerHTML = '<div class="no-data glass"><div class="emoji">📝</div>还没有数据<br>商茗舒 快来报体重吧</div>';
 } else {
   const first = withWeight[0];
   const last = withWeight[withWeight.length - 1];
