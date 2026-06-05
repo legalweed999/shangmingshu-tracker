@@ -430,6 +430,7 @@ const MEALS = [
   { date: "2026-06-03", meal: "晚餐", items: "少油干煎猪里脊、纽崔莱纤维粉、沛源蛋白粉", photo: "", cal: 463, protein: 65.6, carbs: 11.1, fat: 16.8, fiber: 3.0 },
   { date: "2026-06-04", meal: "早餐", items: "鸡蛋馒头片、小葱鸡蛋饼（无面）", photo: "", cal: 210, protein: 11.0, carbs: 13.0, fat: 12.0, fiber: 0.0 },
   { date: "2026-06-04", meal: "晚餐", items: "黄瓜", photo: "", cal: 30, protein: 1.5, carbs: 6.7, fat: 0.2, fiber: 1.0 },
+  { date: "2026-06-05", meal: "早餐", items: "红薯粉条（湿重）、鸡汤、鸡蛋", photo: "", cal: 295, protein: 10.5, carbs: 35.5, fat: 10.0, fiber: 0.0 },
 ];
 
 
@@ -437,16 +438,16 @@ const MEALS = [
 // 格式：{ date: "YYYY-MM-DD", weight: 体重数字或null, exercise: "运动", note: "备注", body: { bf: 体脂率, muscle: 肌肉量, visceral: 内脏脂肪, bmi: BMI } }
 // body 可为 null（无体成分数据时）
 const DATA = [
-  { date: "2026-05-26", weight: 89.25, exercise: "", note: "", body: null },
-  { date: "2026-05-27", weight: 89.0, exercise: "", note: "⬇ 0.25kg）", body: null },
-  { date: "2026-05-28", weight: 89.25, exercise: "", note: "→ 累计下降 0.85kg 🎉", body: null },
-  { date: "2026-05-29", weight: 88.45, exercise: "", note: "⬆ 0.05kg）", body: null },
-  { date: "2026-05-30", weight: 89.1, exercise: "", note: "较昨日 88.45kg  0.65kg）", body: null },
-  { date: "2026-05-31", weight: 88.6, exercise: "", note: "⬇ 0.5kg）", body: null },
-  { date: "2026-06-01", weight: 88.2, exercise: "", note: "⬇ 0.4kg）", body: null },
-  { date: "2026-06-02", weight: 87.95, exercise: "", note: "⬇ 0.25kg）", body: null },
-  { date: "2026-06-03", weight: 87.15, exercise: "", note: "⬇ 0.8kg）", body: null },
-  { date: "2026-06-04", weight: 87.75, exercise: "", note: "⬆ 0.6kg）", body: null },
+  { date: "2026-05-26", weight: 89.25, exercise: "", note: "初始记录", body: null },
+  { date: "2026-05-27", weight: 89.0, exercise: "", note: "晨重, 较初始 89.25kg ⬇ 0.25kg", body: null },
+  { date: "2026-05-28", weight: 88.4, exercise: "", note: "晨重, 较昨日 89.0kg ⬇ 0.6kg", body: null },
+  { date: "2026-05-29", weight: 88.45, exercise: "", note: "晨重, 较昨日 88.4kg ⬆ 0.05kg", body: null },
+  { date: "2026-05-30", weight: 89.1, exercise: "", note: "晨重, 较昨日 88.45kg ⬆ 0.65kg", body: null },
+  { date: "2026-05-31", weight: 88.6, exercise: "", note: "晨重, 较昨日 89.1kg  0.5kg", body: null },
+  { date: "2026-06-01", weight: 88.2, exercise: "", note: "晨重, 较昨日 88.6kg  0.4kg", body: null },
+  { date: "2026-06-02", weight: 87.95, exercise: "", note: "晨重, 较昨日 88.2kg ⬇ 0.25kg", body: null },
+  { date: "2026-06-03", weight: 87.15, exercise: "", note: "晨重, 较昨日 87.95kg ⬇ 0.8kg", body: null },
+  { date: "2026-06-04", weight: 87.75, exercise: "", note: "晨重, 较昨日 87.15kg ⬆ 0.6kg", body: null },
 ];
 
 const GOAL = 65.0; // 用户目标体重（修改此值）
@@ -793,4 +794,4 @@ document.addEventListener('click', e => {
 </body>
 </html>
 
-<!-- deploy-ts: 2026-06-04 22:00:11 -->
+<!-- deploy-ts: 2026-06-05 09:17:02 -->
