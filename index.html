@@ -636,12 +636,14 @@ const MEALS = [
   { date: "2026-08-04", meal: "加餐", items: "桂花米酿拿铁", photo: "", cal: 230, protein: 10.0, carbs: 27.0, fat: 12.0, fiber: 0.0 },
   { date: "2026-08-04", meal: "午餐", items: "瘦牛肉片 (167g)、清炒红薯叶 (239g)", photo: "", cal: 330, protein: 54.0, carbs: 12.0, fat: 15.0, fiber: 7.0 },
   { date: "2026-08-04", meal: "晚餐", items: "吾岛酸奶 (151g)、沛源蛋白粉 (16g)、纤维粉 (5g)", photo: "", cal: 226, protein: 17.8, carbs: 18.3, fat: 9.3, fiber: 4.5 },
+  { date: "2026-08-04", meal: "晚间加餐", items: "芝士奶盖四季春 (无糖)", photo: "", cal: 250, protein: 4.0, carbs: 15.0, fat: 22.0, fiber: 0.0 },
   { date: "2026-08-05", meal: "早餐", items: "桃 (127g)、沛源蛋白粉 (16g)、纤维粉 (10g)", photo: "", cal: 130, protein: 13.8, carbs: 21.5, fat: 0.7, fiber: 9.7 },
   { date: "2026-08-05", meal: "午餐", items: "青椒碎拌豆腐 (202g)、蒜末红薯叶 (150g)、鸡腿炖土豆粉丝草蘑 (843g)", photo: "", cal: 1140, protein: 69.0, carbs: 74.0, fat: 57.0, fiber: 7.0 },
   { date: "2026-08-05", meal: "晚餐", items: "烤大虾 (1 个)、烤鱿鱼须 (1 串)", photo: "", cal: 90, protein: 14.0, carbs: 1.0, fat: 4.5, fiber: 0.0 },
   { date: "2026-08-06", meal: "早餐", items: "乐纤 (32g)", photo: "", cal: 118, protein: 9.0, carbs: 11.0, fat: 2.6, fiber: 3.4 },
   { date: "2026-08-06", meal: "加餐", items: "苹果 C 美式", photo: "", cal: 120, protein: 0.0, carbs: 28.0, fat: 0.0, fiber: 0.0 },
   { date: "2026-08-06", meal: "午餐", items: "烧鸡 (418g, 去骨)、黄瓜 (392g)、青椒碎拌豆腐 (166g)、鲜莲子 (17g)", photo: "", cal: 934, protein: 128.8, carbs: 21.5, fat: 45.5, fiber: 5.5 },
+  { date: "2026-08-06", meal: "晚间加餐", items: "大西瓜生椰冷萃", photo: "", cal: 110, protein: 1.0, carbs: 15.0, fat: 4.0, fiber: 0.0 },
   { date: "2026-08-06", meal: "晚餐", items: "杂烩串串 (无油)", photo: "", cal: 190, protein: 22.0, carbs: 16.0, fat: 5.0, fiber: 9.0 },
   { date: "2026-08-07", meal: "早餐", items: "新希望纯牛奶 (250ml)、蛋白粉 (30g)", photo: "", cal: 281, protein: 32.3, carbs: 15.5, fat: 10.3, fiber: 0.0 },
   { date: "2026-08-07", meal: "上午加餐", items: "纽崔莱纤维粉 (16g)、蛋白粉 (23g)、人参果 (68g)、黄瓜 (165g)", photo: "", cal: 165, protein: 20.0, carbs: 26.1, fat: 0.8, fiber: 15.9 },
@@ -665,11 +667,15 @@ const MEALS = [
   { date: "2026-08-14", meal: "晚餐", items: "黄瓜 (193g)、素三鲜包子 (160g)", photo: "", cal: 350, protein: 10.5, carbs: 57.0, fat: 7.0, fiber: 4.0 },
   { date: "2026-08-15", meal: "午餐", items: "沙葱炒蛋 (162g)、蒜末西兰苔 (100g)、猪肉包子 (228g)", photo: "", cal: 795, protein: 32.0, carbs: 70.0, fat: 35.5, fiber: 7.0 },
   { date: "2026-08-15", meal: "晚餐", items: "猪里脊 (247g, 干煎)、猪肉包子 (56g)、蒜末西兰苔 (199g)", photo: "", cal: 600, protein: 57.6, carbs: 37.0, fat: 28.8, fiber: 6.0 },
+  { date: "2026-08-15", meal: "晚间加餐", items: "烤全翅 (1 个)", photo: "", cal: 160, protein: 15.0, carbs: 0.0, fat: 11.0, fiber: 0.0 },
   { date: "2026-08-16", meal: "早餐", items: "牛奶 (110ml)、沛源蛋白粉 (9g)、纽崔莱植物蛋白粉 (14g)、纤维粉 (10g)、桃 (171g)、葱鸡蛋饼 (125g)", photo: "", cal: 526, protein: 31.5, carbs: 67.8, fat: 15.0, fiber: 10.5 },
   { date: "2026-08-16", meal: "午餐", items: "蒜末红薯叶 (430g)、白灼虾去壳 (230g)、米饭 (100g)、炖鱼籽 (69g)、炖鱼去刺 (217g)", photo: "", cal: 910, protein: 107.6, carbs: 40.0, fat: 28.5, fiber: 13.0 },
   { date: "2026-08-17", meal: "早餐", items: "纤维粉 (10g)、蛋白粉 (21g)、黄瓜 (133g)", photo: "", cal: 122, protein: 17.8, carbs: 9.3, fat: 2.1, fiber: 9.0 },
   { date: "2026-08-17", meal: "午餐", items: "桂花糯米藕 (75g)、狮子头 (105g)、番茄菜花炒鸡蛋 (225g)、玉米粒 (220g)、冬瓜虾仁粉丝 (混合、沙葱炒牛肉 (255g)", photo: "", cal: 1050, protein: 62.0, carbs: 112.0, fat: 36.0, fiber: 17.0 },
   { date: "2026-08-17", meal: "晚餐", items: "冬瓜虾仁粉丝、包子 (馅18g+皮44g)、麦香荔浦芋头 (87g)、沙葱炒牛肉 (128g)", photo: "", cal: 450, protein: 24.0, carbs: 66.0, fat: 10.0, fiber: 5.5 },
+  { date: "2026-08-18", meal: "早餐", items: "纤维粉 (10g)、蛋白粉 (21g)、黄瓜 (133g)", photo: "", cal: 122, protein: 17.8, carbs: 9.3, fat: 2.1, fiber: 9.0 },
+  { date: "2026-08-18", meal: "午餐", items: "桂花糯米藕 (75g)、狮子头 (105g)、番茄菜花炒鸡蛋 (225g)、玉米粒 (220g)、冬瓜虾仁粉丝 (混合、沙葱炒牛肉 (255g)", photo: "", cal: 1050, protein: 62.0, carbs: 112.0, fat: 36.0, fiber: 17.0 },
+  { date: "2026-08-18", meal: "晚餐", items: "冬瓜虾仁粉丝、包子 (馅18g+皮44g)、麦香荔浦芋头 (87g)、沙葱炒牛肉 (128g)", photo: "", cal: 450, protein: 24.0, carbs: 66.0, fat: 10.0, fiber: 5.5 },
 ];
 
 
@@ -757,6 +763,7 @@ const DATA = [
   { date: "2026-08-15", weight: 80.9, exercise: "", note: "", body: null },
   { date: "2026-08-16", weight: 81.15, exercise: "", note: "", body: null },
   { date: "2026-08-17", weight: 80.9, exercise: "", note: "", body: null },
+  { date: "2026-08-18", weight: 80.9, exercise: "", note: "", body: null },
 ];
 
 const GOAL = 60.0; // 用户目标体重（修改此值）
@@ -1103,4 +1110,4 @@ document.addEventListener('click', e => {
 </body>
 </html>
 
-<!-- deploy-ts: 2026-08-18 20:39:45 -->
+<!-- deploy-ts: 2026-08-18 20:52:11 -->
